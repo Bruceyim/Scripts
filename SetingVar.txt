@@ -1,0 +1,6 @@
+在cmd窗口中set设置的环境变量为临时变量，如：
+set PATH=%PATH%;%OPENCV_DIR%\bin
+
+使用setx设置为永久环境变量,适用于bat中：
+setx PATH "%PATH%;%OPENCV_DIR%\bin"  
+setx -m OPENCV_DIR D:\opencv\build\x64\vc15
